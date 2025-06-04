@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn..</title>
+    <link rel="icon" href="assets/images/Vector.png" />
+    <link rel="stylesheet" href="./assets/botstrap.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+  </head>
+  <body>
+    <!-- start-navbar -->
+    <header>
+      <nav
+        id="mainNavbar"
+        class="navbar navbar-expand-lg bg-light fixed visible"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              class="rounded-circle"
+              width="70px"
+              src="./assets/images/logo-5.svg"
+              alt="Logo"
+            />
+          </a>
+
+          <!-- Toggler for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto text-center d-flex gap-3">
+              <li class="nav-item">
+                <a class="nav-link hover-links" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-links" href="Contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-links" href="Course.html">Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-links" href="About.html">About</a>
+              </li>
+            </ul>
+            <div class="text-center">
+              <button class="btn btn-warning">GetStarted</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button
+        id="backToTop"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </header>
+    <!-- end navbar -->
+
+    <section>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip01" class="form-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip01"
+                  value="Amjad"
+                  required
+                />
+                <div class="valid-tooltip">Looks good!</div>
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip02"
+                  value="Idris"
+                  required
+                />
+                <div class="valid-tooltip">Looks good!</div>
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltipUsername" class="form-label"
+                  >Username</label
+                >
+                <div class="input-group has-validation">
+                  <span
+                    class="input-group-text"
+                    id="validationTooltipUsernamePrepend"
+                    >@</span
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltipUsername"
+                    aria-describedby="validationTooltipUsernamePrepend"
+                    required
+                  />
+                  <div class="invalid-tooltip">
+                    Please choose a unique and valid username.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip03" class="form-label">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip03"
+                  required
+                />
+                <div class="invalid-tooltip">Please provide a valid city.</div>
+              </div>
+              <div class="col-md-3 position-relative">
+                <label for="validationTooltip04" class="form-label"
+                  >State</label
+                >
+                <select class="form-select" id="validationTooltip04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Istanbul</option>
+                  <option>Ankara</option>
+                  <option>Izmir</option>
+                  <option>Antalya</option>
+                  <option>Bursa</option>
+                </select>
+                <div class="invalid-tooltip">Please select a valid state.</div>
+              </div>
+              <div class="col-md-3 position-relative">
+                <label for="validationTooltip05" class="form-label">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip05"
+                  required
+                />
+                <div class="invalid-tooltip">Please provide a valid zip.</div>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <button class="btn btn-primary W-100" type="submit">
+                  Submit form
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start section -->
+    <section
+      class="pt-5"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+      data-aos-once="true"
+    >
+      >
+      <div class="container-fluid section-2">
+        <div
+          class="row section-2-bg text-white text-center d-flex gap-5 d-flex-md-none gap-md-0"
+        >
+          <div class="col-12 col-md-3 border-buttom">
+            <h3>+8200</h3>
+            <p>Success Stories</p>
+          </div>
+
+          <div class="col-12 col-md-3 border-start border-buttom">
+            <h3>+12200</h3>
+            <p>Expert Mentors</p>
+          </div>
+          <div class="col-12 col-md-3 border-start border-buttom">
+            <h3>+50000</h3>
+            <p>Hours Course</p>
+          </div>
+          <div class="col-12 col-md-3 border-start">
+            <h3>+70000</h3>
+            <p>Active Student</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end-section -->
+
+    <!--start section  -->
+    <section
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+      data-aos-once="true"
+    >
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-12 text-center">
+            <h2 class="fw-bold mb-3">What our Students say</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+            </p>
+          </div>
+        </div>
+        <!-- cart-1 -->
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <h4 class="fw-bold">Startup Founder</h4>
+                  <i class="fa-solid fa-quote-right fs-1 text-danger py-3"></i>
+                  <p class="lh-lg">
+                    "Working with your team was seamless. The app exceeded
+                    expectations, delivered on time, and support has been
+                    outstanding since launch."
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer border-2 d-flex justify-content-start align-items-center gap-2"
+              >
+                <div>
+                  <img
+                    width="50"
+                    height="50"
+                    class="rounded-circle border border-danger border-3"
+                    src="assets/images/70c675b966360599e10bf4e0626e530d2e4263d3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h6>Sophia Reynolds</h6>
+                  <p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </p>
+                </div>
+                <p class="d-flex ms-auto align-items-center">
+                  <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- cart-2 -->
+          <div class="col-11 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <h4 class="fw-bold">Product Manager</h4>
+                  <i class="fa-solid fa-quote-right fs-1 text-primary py-3"></i>
+                  <p class="lh-lg">
+                    "Professional, responsive, and truly understood our goals.
+                    They turned our idea into a fully working platform with zero
+                    bugs. Impressive!"
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer border-2 d-flex justify-content-start align-items-center gap-2"
+              >
+                <div>
+                  <img
+                    width="50"
+                    height="50"
+                    class="rounded-circle border border-primary border-3"
+                    src="assets/images/3-.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h6>Aisha Khan</h6>
+                  <p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </p>
+                </div>
+                <p class="d-flex ms-auto align-items-center">
+                  <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- cart-3 -->
+          <div class="col-11 col-md-4 mb-5">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <h4 class="fw-bold">E-commerce Manager</h4>
+                  <i class="fa-solid fa-quote-right fs-1 text-warning py-3"></i>
+                  <p class="lh-lg">
+                    They built our website fast, with clean code and great
+                    design. Our sales increased immediately. Highly recommend
+                    their development services!"
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-footer border-2 d-flex justify-content-start align-items-center gap-2"
+              >
+                <div>
+                  <img
+                    width="50"
+                    height="50"
+                    class="rounded-circle border border-warning border-3"
+                    src="assets/images/2-.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h6>James Carter</h6>
+                  <p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </p>
+                </div>
+                <p class="d-flex ms-auto align-items-center">
+                  <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end-section -->
+
+    <!-- start section -->
+    <div class="section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 text-white text-center">
+            <a class="prand text-decoration-none" href="#"
+              ><img
+                class="bg-white rounded-circle p-2"
+                src="./assets/images/Vector.png"
+                alt=""
+              /><span class="text-white fs-4 px-2">Learn.</span></a
+            >
+            <div>
+              <h4 class="py-3">Follow on social service</h4>
+              <ul
+                class="d-flex justify-content-center gap-3 align-items-center list-unstyled"
+              >
+                <li>
+                  <a href="https://www.instagram.com/amjad_idris_/"
+                    ><i class="fa-brands fa-instagram text-white fs-4"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/share/1BJW9CdAL2/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f text-white fs-4"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/+905359363156" target="">
+                    <i class="fab fa-whatsapp text-white fs-4"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/amjad-idris-4115b1366/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in text-white fs-4"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 text-center">
+            <div class="">
+              <h3><a href="#" class="text-white fw-3 fs-2">Resource </a></h3>
+              <ul class="list-unstyled text-white d-flex flex-column gap-4">
+                <li><a href="#" class="text-white">About Us</a></li>
+                <li><a href="#" class="text-white">Carrier</a></li>
+                <li><a href="#" class="text-white">Legal Notice</a></li>
+                <li><a href="#" class="text-white">map</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 text-center">
+            <div class="">
+              <h3><a href="#" class="text-white fw-3 fs-2">Contacts</a></h3>
+              <ul class="list-unstyled text-white d-flex flex-column gap-4">
+                <li><a href="#" class="text-white">192. Istanbul-turkey</a></li>
+                <li><a href="#" class="text-white">Support </a></li>
+
+                <li><a href="#" class="text-white">+90 535 936 31 56 </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 text-center">
+            <div class="">
+              <h3><a href="#" class="text-white fw-3 fs-2">links</a></h3>
+              <ul class="list-unstyled text-white d-flex flex-column gap-4">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">service</a></li>
+                <li><a href="#" class="text-white">contact</a></li>
+                <li><a href="#" class="text-white">call</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-footer"></div>
+        <div class="text-center text-white py-5">Copyright 2020@ all right</div>
+      </div>
+    </div>
+
+    <!-- end-section -->
+    <script src="./assets/javascribt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const navbar = document.getElementById("mainNavbar");
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        const scrollPos = window.scrollY;
+
+        if (scrollPos < 100) {
+          navbar.classList.add("visible");
+          navbar.classList.remove("hidden");
+          backToTop.classList.remove("show");
+        } else if (scrollPos >= 100 && scrollPos < 1000) {
+          navbar.classList.add("hidden");
+          navbar.classList.remove("visible");
+          backToTop.classList.remove("show");
+        } else if (scrollPos >= 1000) {
+          navbar.classList.add("visible");
+          navbar.classList.remove("hidden");
+          backToTop.classList.add("show");
+        }
+      });
+    </script>
+  </body>
+</html>
