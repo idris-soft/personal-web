@@ -315,6 +315,31 @@ border: none;
     letter-spacing: 1px;
 }
 
+
+
+@media (max-width:567px) {
+  .video-1{
+    background-color:rgb(245, 195, 98);
+    transform: translateY(0) translateX(10px);
+    z-index: -10;
+    border-radius: 10px;
+}
+.video-1 img{
+    width: 200px;
+    scale: 1;
+}
+.video-2{
+    background-color:rgb(105, 182, 210);
+    transform: translateX(50px) translateY(0px);
+    border-radius: 10px;
+}
+.video-2 img{
+    width: 200px;
+    transform: translateX(8px);
+}
+}
+
+
 .btn-warning{
   background-color:rgb(245, 195, 98) !important ;
   color: white;
